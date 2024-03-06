@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 1.4rem;
+        }
+        header{
+            background-color: rgba(0, 0, 0, 0.791);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .logo{
+            background-color: blueviolet;
+        }
+        .left{
+            margin: 0px 100px;
+        }
+        .right{
+            /* background-color: aquamarine; */
+            margin-right: 100px;
+        }
+        .login{
+            margin-right: 50px;
+            display: inline-block;
+            background-color: greenyellow;
+        }
+        .register{
+            background-color: rgba(113, 252, 111, 0.931);
+        }
+        .login,.register,.logo{
+            padding: 8px;
+            border-radius: 5px;
+        }
+        main{
+            display: flex;
+            /* background-color: gray; */
+        }
+        section{
+            /* background-color: burlywood; */
+            width: 70%;
+            padding: 2%;
+        }
+        article{
+            /* background-color: rgb(250, 236, 46); */
+        }
+        article:nth-child(2)
+        {
+            margin-top: 30px;
+        }
+        aside{
+            /* background-color: coral; */
+            width: 30%;
+            text-align: center;
+        }
+        aside ul li{
+            margin-top: 100px;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        ul li{
+            list-style: none;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        main,article,section,aside,footer{
+            /* border: 1px solid rgba(0, 0, 0, 0.643); */
+        }
+        article{
+            border: 1px solid rgba(0, 0, 0, 0.747);
+            border-radius: 15px;
+            padding: 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        nav ul li {
+            list-style: none;
+            background-color: rgba(243, 106, 243, 0.929);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        nav ul,.left{
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li:hover,nav ul li a:hover
+        {
+            background-color: gray;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="left">
+            <span class="logo">LOGO</span>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <span class="login">login</span>
+            <span class="register">register</span>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, molestias! Ipsa sequi fuga vero earum veritatis quisquam nesciunt ipsam nam quia voluptatibus ipsum deserunt ad dolor praesentium, tempora quas aspernatur?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, molestias! Ipsa sequi fuga vero earum veritatis quisquam nesciunt ipsam nam quia voluptatibus ipsum deserunt ad dolor praesentium, tempora quas aspernatur?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, molestias! Ipsa sequi fuga vero earum veritatis quisquam nesciunt ipsam nam quia voluptatibus ipsum deserunt ad dolor praesentium, tempora quas aspernatur?
+            </article>
+            <article>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, molestias! Ipsa sequi fuga vero earum veritatis quisquam nesciunt ipsam nam quia voluptatibus ipsum deserunt ad dolor praesentium, tempora quas aspernatur?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, molestias! Ipsa sequi fuga vero earum veritatis quisquam nesciunt ipsam nam quia voluptatibus ipsum deserunt ad dolor praesentium, tempora quas aspernatur?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, molestias! Ipsa sequi fuga vero earum veritatis quisquam nesciunt ipsam nam quia voluptatibus ipsum deserunt ad dolor praesentium, tempora quas aspernatur?
+            </article>
+        </section>
+        <aside>
+            <ul>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+                <li><a href="#">link 4</a></li>
+                <li><a href="#">link 5</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <h1>this is footer</h1>
+    </footer>
+</body>
+</html>
