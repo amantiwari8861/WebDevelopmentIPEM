@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainbox{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        /* .car {
+            position: relative;
+            animation: run 4s ease-in 1s infinite ;
+
+        } */
+
+        @keyframes run {
+
+            from{
+                top: 0px;
+                left: 0px;
+            }
+            to{
+            transform: rotate(360deg);
+            transition: transform 2s;
+            }
+            /* 0% {
+                top: 0px;
+                left: 0px;
+            } */
+
+            /* 25%{
+                transform: rotate(360deg);
+                transition: transform 2s;
+            } */
+            /* 100%{
+                top: 0px;
+                right: 0px;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="car"><img src="https://www.pngitem.com/pimgs/m/330-3306519_bugatti-chiron-png-transparent-png.png"
+                height="200px" width="300px" alt=""></div>
+    </div>
+</body>
+
+</html>
